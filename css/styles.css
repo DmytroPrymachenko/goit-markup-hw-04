@@ -4,6 +4,7 @@
   --accent-color: #4d5ae5;
   --logotip-text-color: #ffffff;
   --button-rale: #e7e9fc;
+  --LIGHT-SLATE: #8e8f99;
 }
 h1,
 h2,
@@ -175,6 +176,12 @@ body {
 .hero {
   background-color: #2e2f42;
   padding: 188px 0 188px;
+  max-width: 1440px;
+  max-height: 600px;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/dz4/people-office\ 1.jpg);
+  margin: 0 auto;
+  background-repeat: no-repeat;
 }
 .hero-container {
   text-align: center;
@@ -268,6 +275,16 @@ body {
   min-width: 264px;
   min-height: 72px;
 }
+.div-icon-logo {
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: var(--CLOUD, #f4f4fd);
+}
 /* <!-- 2га основна секція work
        --> */
 .work {
@@ -303,6 +320,17 @@ body {
 }
 /* Заголовок Team*/
 .team-title {
+  color: var(--primary-text-color);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  padding-bottom: 72px;
 }
 /* Список Team */
 .team-list {
@@ -333,19 +361,7 @@ body {
 
   padding: 32px 0 32px;
 }
-.team-title {
-  color: var(--primary-text-color);
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-size: 36px;
 
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-
-  padding-bottom: 72px;
-}
 .team-title-content {
   color: var(--primary-text-color);
 
@@ -372,7 +388,72 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.team-list-element {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+.team-list-element-media {
+}
+.team-element-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 90px;
+  background-color: #4d5ae5;
+  color: #f4f4fd;
+}
+.team-element-link:focus,
+.team-element-link:hover {
+  background-color: #31d0aa;
+}
+.team-media {
+  fill: currentColor;
+}
 
+/* 4тя основна секція */
+.customers-container {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.Customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.Customers-title {
+  color: var(--primary-text-color);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  padding-bottom: 72px;
+}
+.li-customers-logo {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+
+  width: 168px;
+  height: 88px;
+  border-radius: 4px;
+  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+}
+.div-customers-logo {
+}
+.customers-logo {
+  width: 104px;
+  height: 56px;
+}
 /* підлога
  */
 .footer-floor {
@@ -380,8 +461,11 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.footer-container {
+.div-footer {
+  display: flex;
+  gap: 120px;
 }
+
 .logo-floor {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
@@ -410,6 +494,35 @@ body {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.footer-text {
+  margin-bottom: 16px;
+}
+/* Оформление значков футера */
+
+.footer-list-element {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.footer-list-element-media {
+}
+.footer-element-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 90px;
+  background-color: #4d5ae5;
+  color: #f4f4fd;
+}
+.footer-element-link:focus,
+.footer-element-link:hover {
+  background-color: #31d0aa;
+}
+.footer-media {
+  fill: currentColor;
 }
 
 /* Сторінка портфоліо
