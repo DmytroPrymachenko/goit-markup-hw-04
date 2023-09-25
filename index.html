@@ -60,7 +60,7 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button">Order Service</button>
+          <button type="button" class="hero-button" data-modal-open>Order Service</button>
         </div>
       </section>
       <!-- Перша основна секція 
@@ -325,7 +325,7 @@
             <li class="li-customers-logo"
               ><div class="div-customers-logo">
                  <a class="a-customers" href="">
-                <svg class="customers-logo" width="104" height="56" icon-Logo1>
+                <svg class="customers-logo" width="104" height="56" >
                   <use href="./css/icons.svg#icon-Logo6"></use>
                 </svg></a>
               </div>
@@ -379,15 +379,16 @@
       </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="backdrop-modal">
-        <button type="button" class="backdrop-button">
-         <svg class="backdrop-button-modal-icon" width="24" height="24">
-            <use href=""></use>
+        <button type="button" class="backdrop-button" data-modal-close>
+         <svg class="backdrop-button-modal-icon" width="8" height="8">
+            <use href="./css/icons.svg#icon-cross"></use>
           </svg>
         </button>
 
       </div>
     </div>
+    <script src="./css/modal.js"></script>
   </body>
 </html>
