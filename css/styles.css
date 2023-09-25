@@ -460,7 +460,7 @@ body {
 
   margin-bottom: 72px;
 }
-.testa-customers {
+.a-customers {
   color: #8e8f99;
 
   display: flex;
@@ -472,8 +472,15 @@ body {
   height: 88px;
   border-radius: 4px;
   border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.testli-customers-logo {
+.a-customers:focus,
+.a-customers:hover {
+  border-color: #404bbf;
+  color: #404bbf;
+}
+.li-customers-logo {
 }
 
 .customers-logo {
