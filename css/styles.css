@@ -498,7 +498,8 @@ body {
 }
 .div-footer {
   display: flex;
-  gap: 120px;
+
+  align-items: baseline;
 }
 
 .logo-floor {
@@ -530,9 +531,21 @@ body {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-right: 120px;
 }
 .footer-text {
   margin-bottom: 16px;
+
+  color: #ffffff;
+  width: 264px;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-right: 120px;
 }
 /* Оформление значков футера */
 
