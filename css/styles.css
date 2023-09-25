@@ -442,12 +442,12 @@ body {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.сustomers-list {
+.customers-list {
   display: flex;
   justify-content: center;
   gap: 24px;
 }
-.сustomers-title {
+.customers-title {
   color: var(--primary-text-color);
   text-align: center;
   font-family: 'Roboto', sans-serif;
