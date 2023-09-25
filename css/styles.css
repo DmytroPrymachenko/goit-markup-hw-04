@@ -439,15 +439,15 @@ body {
 
 /* 4тя основна секція */
 .customers-container {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
-.Customers-list {
+.сustomers-list {
   display: flex;
   justify-content: center;
   gap: 24px;
 }
-.Customers-title {
+.сustomers-title {
   color: var(--primary-text-color);
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -458,7 +458,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .a-customers {
   color: #8e8f99;
