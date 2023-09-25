@@ -170,6 +170,21 @@ body {
   color: #404bbf;
 }
 
+.header-link-color {
+  position: relative;
+  display: block;
+}
+.header-link-color::after {
+  content: '';
+  position: absolute;
+  min-width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--accent-color);
+  bottom: 0;
+  left: 0;
+}
+
 /* Main */
 /* 
 Секція герой */
@@ -201,7 +216,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
 
-  padding-bottom: 24px;
+  margin-bottom: 48px;
 
   max-width: 496px;
 }
@@ -219,8 +234,6 @@ body {
   background-color: #4d5ae5;
 }
 .hero-button {
-  margin-top: 24px;
-
   min-width: 169px;
   min-height: 56px;
   border: none;
@@ -330,12 +343,12 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 /* Список Team */
 .team-list {
   background-color: #f4f4fd;
-  margin-bottom: 120px;
+
   display: flex;
   gap: 24px;
 }
@@ -482,7 +495,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-  padding-bottom: 17.5px;
+
+  margin-bottom: 17.5px;
 
   display: inline-block;
 }
