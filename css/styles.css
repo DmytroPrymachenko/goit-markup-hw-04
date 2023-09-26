@@ -664,6 +664,7 @@ body {
 /* Портфоліо wrapper */
 .portfolio-wrapper {
   position: relative;
+  overflow: hidden;
 }
 .overlay {
   position: absolute;
