@@ -632,6 +632,8 @@ body {
   color: #ffffff;
   background-color: #404bbf;
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* Портфоліо список
  */
@@ -651,6 +653,12 @@ body {
 /* Портфоліо контент елементу списку */
 .portfolio-link {
   text-decoration: none;
+  display: block;
+}
+.portfolio-link:hover,
+.portfolio-link:focus: {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfolio-text-content {
   padding: 32px 16px;
@@ -735,4 +743,37 @@ body {
   opacity: 0;
   pointer-events: none;
   transform: translateY(100%);
+}
+/* Портфоліо wrapper */
+.portfolio-wrapper {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 360px;
+  height: 300px;
+  background-color: #4d5ae5;
+  padding-top: 40px;
+  padding-right: 32px;
+  padding-left: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100%);
+}
+.overlay-text {
+  color: #f4f4fd;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.portfolio-link:hover {
+  transform: translateY(0);
 }
